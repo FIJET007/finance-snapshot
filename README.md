@@ -86,9 +86,6 @@ Installation
 npm install
 npm run dev
 
-The application will run at:
-
-http://localhost:5173
 Development Scripts
 Command	Description
 npm run dev	Start development server
