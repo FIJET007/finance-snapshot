@@ -1,88 +1,174 @@
-# Money Snapshot
+Money Snapshot
 
-A lightweight personal finance tracker built with React and TypeScript. Quickly visualize your spending habits, set category budgets, and track your monthly income and expenses with an intuitive dashboard.
+A lightweight personal finance tracker built with React and TypeScript that helps users quickly visualize spending habits, track income and expenses, and manage category budgets through a simple and intuitive dashboard.
 
-## Features
+The application focuses on simplicity, speed, and accessibility, allowing users to track their finances without creating accounts or connecting external services.
 
-- **Transaction Management**: Log income and expenses across five spending categories (Housing, Food & Dining, Transport, Entertainment, Utilities)
-- **Budget Tracking**: Set monthly budget limits per category and monitor spending in real-time
-- **Monthly Overview**: Quick view of total income, expenses, and balance for the current month
-- **Spending Breakdown**: Visual charts showing expense distribution across categories
-- **Local Storage**: All data persists locally in your browser—no accounts or server required
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
+Features
+Transaction Management
 
-## Getting Started
+Log income and expenses across five spending categories:
 
-### Prerequisites
+Housing
 
-- Node.js (v18 or higher)
-- npm or Bun package manager
+Food & Dining
 
-### Installation
+Transport
 
-```sh
+Entertainment
+
+Utilities
+
+Users can easily add and review transactions in one place.
+
+Budget Tracking
+
+Set monthly budget limits for each category and monitor spending in real time. The dashboard highlights when spending approaches or exceeds the budget.
+
+Monthly Overview
+
+Quick summary showing:
+
+Total monthly income
+
+Total monthly expenses
+
+Remaining balance
+
+This gives users a fast snapshot of their financial situation.
+
+Spending Breakdown
+
+Interactive charts display how expenses are distributed across categories, helping users understand spending patterns visually.
+
+Local Storage Persistence
+
+All data is stored locally in the browser using localStorage, meaning:
+
+No account required
+
+No backend infrastructure needed
+
+Instant access to saved data
+
+Responsive Design
+
+The interface adapts to both desktop and mobile devices for a smooth experience across screen sizes.
+
+Tech Stack
+
+This project was built using modern frontend tools:
+
+Frontend: React 18 + TypeScript
+
+Build Tool: Vite
+
+UI Components: shadcn/ui (Radix UI)
+
+Styling: Tailwind CSS
+
+Forms: React Hook Form
+
+Charts: Recharts
+
+Routing: React Router
+
+Testing: Vitest & Playwright
+
+Getting Started
+Prerequisites
+
+Node.js (v18 or higher)
+
+npm or Bun
+
+Installation
 npm install
 npm run dev
-```
 
-The app will be available at `http://localhost:5173`.
+The application will run at:
 
-## Development
+http://localhost:5173
+Development Scripts
+Command	Description
+npm run dev	Start development server
+npm run build	Build project for production
+npm run preview	Preview the production build
+npm run test	Run tests once
+npm run test:watch	Run tests in watch mode
+npm run lint	Run ESLint checks
+How the App Works
+Data Storage
 
-### Available Scripts
+Transactions and budgets are stored in the browser using localStorage.
 
-- `npm run dev` - Start the development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview the production build locally
-- `npm run test` - Run all tests once
-- `npm run test:watch` - Run tests in watch mode
-- `npm run lint` - Run ESLint checks
+Storage keys:
 
-## Tech Stack
+finance_transactions
 
-- **Frontend**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **UI Components**: Shadcn/ui (built on Radix UI)
-- **Form Handling**: React Hook Form
-- **Data Visualization**: Recharts
-- **Styling**: Tailwind CSS
-- **Testing**: Vitest & Playwright
-- **Routing**: React Router
+finance_budgets
 
-## How It Works
+The app loads sample data on first launch to demonstrate how the dashboard works.
 
-### Data Storage
+Development Notes
+What I Built and Why I Made Certain Choices
 
-All transactions and budget settings are stored in browser localStorage under the keys `finance_transactions` and `finance_budgets`. The app loads sample data on first use to help you get started.
+Money Snapshot was built to demonstrate how a simple financial dashboard can help users track their spending without requiring complex setup or backend services.
 
-### Categories
+Key technical decisions included:
 
-- Housing
-- Food & Dining
-- Transport
-- Entertainment
-- Utilities
+React + TypeScript for maintainable and scalable frontend development.
 
-Budgets can be customized for each category, and the app alerts you when spending exceeds your limit.
+Vite for a fast development environment and optimized builds.
 
-## Contributing
+Tailwind CSS to speed up UI development and maintain design consistency.
 
-No external contributions at this time. This is a personal project.
+shadcn/ui to provide accessible, well-designed UI components.
 
-## License
+Recharts for visualizing financial data in an easy-to-understand format.
+
+LocalStorage to keep the application lightweight and avoid backend dependencies.
+
+These choices allowed the application to remain fast, simple, and easy to maintain.
+
+What I Would Improve With More Time
+
+If more time were available, I would improve the application by adding:
+
+User authentication and cloud storage
+
+Database integration for persistent cross-device data
+
+Custom spending categories
+
+Advanced analytics such as spending trends and financial insights
+
+Savings goals tracking
+
+Export/import functionality (CSV or bank statement uploads)
+
+Expanded test coverage
+
+Challenges Faced
+
+One challenge was ensuring that transaction updates dynamically reflected across all dashboard components, including charts, summaries, and category budgets.
+
+Another challenge was structuring the data flow between forms, state management, and chart visualization to ensure accuracy and responsiveness whenever transactions changed.
+
+Time Spent
+
+Approximately 8–12 hours were spent completing the project, including:
+
+Project setup and architecture
+
+Building UI components
+
+Implementing transaction and budget logic
+
+Integrating charts and visualizations
+
+Testing and refinement
+
+License
 
 MIT
-
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-
