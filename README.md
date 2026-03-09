@@ -86,6 +86,8 @@ Installation
 npm install
 npm run dev
 
+Application at: https://finance-rust-delta.vercel.app/
+
 Development Scripts
 Command	Description
 npm run dev	Start development server
